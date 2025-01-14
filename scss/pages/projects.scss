@@ -1,0 +1,42 @@
+/* -------------------------------------------------------------------------- */
+/*                                   PROJECT                                  */
+/* -------------------------------------------------------------------------- */
+
+.project-bgImg-container {
+    // border: 2px solid red;
+    // border: 2px solid red;
+    height: 150vh;
+    width: 100%;
+    background: linear-gradient(to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.8)), url(../img/sabahattin-ali-bg3.1.png);
+    // background-position-x: 100px;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // border-bottom: 5px solid #A9A9A9;
+}
+
+.discount-label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: rgba(0, 255, 183, 0.7); // Kırmızı arka plan
+    color: white;
+    border-radius: 70%;
+    font-size: 1.6rem; // Yazı boyutu
+    font-weight: bold;
+    padding: 15px 10px;
+    transform: rotate(-45deg); // Çapraz yapma
+    transform-origin: left right; // Başlangıç noktası
+    z-index: 10; // Kartın önünde görünmesi için
+
+    // Responsive özellikler için örnekler ekleyebilirsiniz
+    @media (max-width: 768px) {
+        font-size: 1rem; // Ekran küçüldüğünde yazı boyutunu küçültüyoruz
+        padding: 3px 6px; // Aralığı da küçültüyoruz
+    }
+}
+

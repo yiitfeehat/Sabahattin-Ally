@@ -1,0 +1,47 @@
+/* -------------------------------- HOME PAGE ------------------------------- */
+
+.home-container {
+    // border: 2px solid red;
+    height: 80%;
+    position: relative;
+    h3{
+        position: absolute;
+        
+        right: 5%;
+        top: 20%;
+        
+    }
+}
+
+.home {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    // left: 35%;
+    // right: 35%;
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__name {
+        font-size: 5.5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #EFE6DC;
+        width: 100%;
+
+        &--last{
+            color: #7B1E24;
+            font-weight: 700;
+        }
+    }
+
+    h2{
+        margin-bottom: 1rem;
+        color: #EFE6DC;
+        font-size: 2rem;
+    }
+
+    
+}

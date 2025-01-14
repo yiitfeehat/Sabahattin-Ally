@@ -1,0 +1,108 @@
+/* --------------------------------- GALLERY -------------------------------- */
+
+// .gallery-bgImg-container {
+//     // border: 2px solid red;
+//     // border: 2px solid red;
+//     height: 150vh;
+//     width: 100%;
+//     background: linear-gradient(to right,
+//             rgba($primary-color, 0.9),
+//             rgba($primary-color, 0.8)), url(../img/sabahattin-ali-bg3.png);
+//     // background-position-x: 100px;;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     // border-bottom: 5px solid #A9A9A9;
+// }
+
+/* -------------------------------------------------------------------------- */
+
+.nave {
+    position: fixed;
+    z-index: 333;
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  CAROUSEL                                  */
+/* -------------------------------------------------------------------------- */
+
+#carouselExampleAutoplaying {
+    // border: 3px solid yellow;
+    width: 100vw;
+
+}
+
+.carousel-inner {
+    display: flex;
+
+
+}
+
+.carousel-item {
+    // border: 2px solid red;
+    height: 100vh;
+
+    &:img {
+        // height: 100%;
+        object-fit: contain;
+
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* Kendi ikonunuzu ekleyin */
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+    filter: brightness(0) saturate(100%) invert(16%) sepia(50%) saturate(744%) hue-rotate(340deg) brightness(92%) contrast(89%);
+
+
+    
+}
+
+
+
+
+
+
+
+/* --------------------------------- gallery -------------------------------- */
+
+footer.vertical-gallery {
+
+    // border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    // padding: 1rem;
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        @extend .link-style;
+
+    }
+
+    .copyright2 {
+        font-size: 2.5rem;
+        font-family: $secondary-font;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        // transform: rotate(270deg);
+        writing-mode: vertical-lr;
+        font-weight: lighter;
+    }
+
+
+}
+

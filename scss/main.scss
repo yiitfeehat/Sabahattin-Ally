@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo+Play:wght@200..1000&family=Dancing+Script:wght@400..700&family=Lobster&family=Pacifico&family=Playwrite+IE+Guides&family=Playwrite+VN:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap');
+
+
+//abstracts
+@import './abstracts/mixins', './abstracts/variables';
+//base
+@import './base/reset';
+//components
+@import './components/footer', './components/nav', './components/responsive';
+//pages
+@import './pages/about', './pages/gallery', './pages/home', './pages/projects';
+/* -------------------------------------------------------------------------- */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+
+body {
+    font-family: $general-font;
+    // background-color: $primary-color;
+    height: 100vh;
+    line-height: 1;
+    color: $text-color;
+}
+
+a {
+    color: $text-color;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+p {
+    font-family: $general-font;
+}
+
+.home-bgImg-container {
+    // border: 2px solid red;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3)), url(../img/sabahattin-ali-bg.png);
+    // background-position: center;
+    background-position-y: 10px;
+    background-size: cover;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
